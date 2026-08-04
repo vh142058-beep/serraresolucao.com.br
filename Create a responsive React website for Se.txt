@@ -1,0 +1,10 @@
+Create a responsive React website for Serra G&S, a Brazilian engineering and services company.
+Use a premium blue visual identity.
+Include:
+- hero section
+- service cards
+- portfolio section
+- contact form
+- WhatsApp floating button
+- footer with company info
+All visible content must be in Brazilian Portuguese.
