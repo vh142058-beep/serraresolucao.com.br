@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serra Reforma & Soluções | Obras, Reformas & Soluções Corporativas</title>
+  <meta name="description"
+    content="Gerenciadora e construtora de imóveis em Curitiba e RMC. Reformas de alto padrão, casas, galpões industriais, telhados e soluções corporativas.">
+  <meta name="author" content="Serra Reforma & Soluções">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Serra Reforma & Soluções | Obras & Gestão Executiva">
+  <meta property="og:description" content="Gerenciamento completo de reformas residenciais, comerciais, barracões e soluções corporativas.">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Three.js Library via CDN for Interactive 3D Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body class="light-blue-theme">
+  <!-- Interactive 3D House Canvas Background -->
+  <div id="canvas-3d-wrapper">
+    <canvas id="house-3d-canvas"></canvas>
+  </div>
+
+  <!-- Blue Navigation Bar -->
+  <header class="navbar navbar-blue" id="navbar">
+    <div class="container nav-content">
+      <div class="logo">
+        <a href="#inicio"><img src="logo.png" alt="Serra Reforma & Soluções" id="main-logo"></a>
+      </div>
+      
+      <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#empresa" class="nav-link">A Serra</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#simulador" class="nav-link highlight-link">Simular Orçamento</a>
+        <a href="#portfolio" class="nav-link">Portfólio</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#simulador" class="btn btn-blue-sm">
+          <span>Simular Serviço</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION LUMINOSA -->
+    <section id="inicio" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-badge-wrapper reveal">
+          <span class="light-blue-badge">
+            <span class="badge-dot-blue"></span>
+            GESTÃO DE OBRAS, REFORMAS & SOLUÇÕES CORPORATIVAS
+          </span>
+        </div>
+
+        <h1 class="hero-title reveal delay-1">
+          Soluções Integradas em Obras, <br>
+          <span class="text-blue-gradient">Reformas & Gestão de Projetos</span>
+        </h1>
+
+        <p class="hero-subtitle reveal delay-2">
+          Gerenciamento completo de reformas residenciais, casas, galpões industriais, telhados e soluções de presença corporativa.
+        </p>
+
+        <div class="hero-cta-group reveal delay-3">
+          <a href="#simulador" class="btn btn-blue-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span>Simular Orçamento em Tempo Real</span>
+          </a>
+
+          <a href="https://wa.me/5541996306393?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Serra%20Reforma%20%26%20Solu%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="btn btn-blue-outline">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <span>Falar com Nossa Equipe</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEM SOMOS / A SERRA -->
+    <section id="empresa" class="section-padding bg-sky">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <span class="blue-tag">QUEM SOMOS</span>
+            <h2>Gestão Integrada para Sua Obra e Sua Empresa</h2>
+            <p class="lead-text">A <strong>Serra Reforma & Soluções</strong> atua com gerenciamento executivo sob medida para obras residenciais, comerciais e soluções corporativas.</p>
+            <p>Seja para construir ou reformar um imóvel, estruturar um galpão comercial ou gerenciar a presença da sua marca, nossas equipes entregam organização, controle e resultado.</p>
+            
+            <div class="about-features-list">
+              <div class="a-feat-item">
+                <div class="blue-check">✓</div>
+                <div>
+                  <strong>Equipes Especializadas:</strong> Profissionais experientes acompanhando cada etapa do seu projeto.
+                </div>
+              </div>
+              <div class="a-feat-item">
+                <div class="blue-check">✓</div>
+                <div>
+                  <strong>Acompanhamento In-Loco:</strong> Fiscalização constante dos serviços e relatórios de progresso.
+                </div>
+              </div>
+              <div class="a-feat-item">
+                <div class="blue-check">✓</div>
+                <div>
+                  <strong>Transparência Comercial:</strong> Orçamentos fechados sem surpresas de custos adicionais.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image-card reveal delay-2">
+            <div class="about-img-frame">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Gestão de Obras e Soluções">
+              <div class="img-badge-overlay">
+                <strong>Gestão Executiva</strong>
+                <span>Nossa Equipe de Obras & Soluções</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES CARDS -->
+    <section id="servicos" class="section-padding bg-white">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="blue-tag">NOSSOS SERVIÇOS</span>
+          <h2>Soluções Completas para Seus Projetos</h2>
+          <p>Gestão dedicada para obras residenciais, industriais e serviços corporativos.</p>
+        </div>
+
+        <div class="services-cards-grid">
+          <!-- Card 1 -->
+          <div class="service-card reveal delay-1" data-tilt>
+            <div class="card-img-top">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" alt="Gestão de Reformas e Casas">
+            </div>
+            <div class="card-body-inner">
+              <h3>Gestão de Reformas & Casas</h3>
+              <p>Gerenciamento completo para construção ou reforma de casas e apartamentos com acabamento primoroso.</p>
+              <ul class="service-bullets">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Controle total do planejamento</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Cumprimento estrito do prazo</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card reveal delay-2" data-tilt>
+            <div class="card-img-top">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" alt="Barracões Industriais">
+            </div>
+            <div class="card-body-inner">
+              <h3>Barracões & Galpões Industriais</h3>
+              <p>Construção e readequação de barracões comerciais com piso industrial concretado e estrutura metálica.</p>
+              <ul class="service-bullets">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Estruturas preparadas para alta carga</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Execução ágil e segura</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card reveal delay-3" data-tilt>
+            <div class="card-img-top">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="Telhados e Coberturas">
+            </div>
+            <div class="card-body-inner">
+              <h3>Telhados & Coberturas Térmicas</h3>
+              <p>Solução definitiva contra vazamentos e infiltrações, troca de calhas, rufos e instalação de mantas.</p>
+              <ul class="service-bullets">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Telhas termoacústicas de alta vida útil</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Estanqueidade garantida</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card reveal delay-1" data-tilt>
+            <div class="card-img-top">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" alt="Fachadas e Revestimentos">
+            </div>
+            <div class="card-body-inner">
+              <h3>Paredes, Fachadas & Pinturas</h3>
+              <p>Revitalização externa de imóveis, aplicação de revestimentos ACM, alvenarias e pinturas técnicas prediais.</p>
+              <ul class="service-bullets">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Valorização estética imediata</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Selantes impermeabilizantes</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service-card reveal delay-2" data-tilt>
+            <div class="card-img-top">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop" alt="Fundações e Estruturas de Concreto">
+            </div>
+            <div class="card-body-inner">
+              <h3>Fundações & Concreto Armado</h3>
+              <p>Construção de sapatas, blocos, pilares, vigas e lajes com acompanhamento rigoroso de execução.</p>
+              <ul class="service-bullets">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Estrutura robusta e durável</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Concretagem com garantia de prazo</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="service-card reveal delay-3" data-tilt>
+            <div class="card-img-top">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Criação de Sites e Gestão Digital">
+            </div>
+            <div class="card-body-inner">
+              <h3>Criação de Sites & Presença Digital</h3>
+              <p>Desenvolvimento de sites institucionais modernos, alta performance e suporte de presença digital para sua empresa.</p>
+              <ul class="service-bullets">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Design ultra moderno & responsivo</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Alavancagem da sua marca</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR DE ORÇAMENTO WIDGET -->
+    <section id="simulador" class="section-padding simulator-section bg-sky">
+      <div class="container">
+        <div class="simulator-wrapper reveal">
+          <div class="simulator-header text-center">
+            <span class="blue-tag">INTERATIVO</span>
+            <h2>Simulador de Investimento da Sua Obra</h2>
+            <p>Selecione a categoria e a metragem estimada do seu imóvel para calcular a estimativa.</p>
+          </div>
+
+          <div class="simulator-grid">
+            <!-- Controls Form -->
+            <div class="simulator-controls">
+              
+              <!-- Service Type Selector -->
+              <div class="sim-group">
+                <label class="sim-label">1. Escolha o Tipo de Serviço:</label>
+                <div class="sim-options-grid" id="sim-category-group">
+                  <button type="button" class="sim-opt-btn active" data-rate="180" data-name="Construção / Reforma de Casa">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    <span>Casa / Reforma</span>
+                  </button>
+
+                  <button type="button" class="sim-opt-btn" data-rate="230" data-name="Barracão / Galpão Industrial">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    <span>Galpão / Barracão</span>
+                  </button>
+
+                  <button type="button" class="sim-opt-btn" data-rate="140" data-name="Telhado / Cobertura">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <span>Telhado / Cobertura</span>
+                  </button>
+
+                  <button type="button" class="sim-opt-btn" data-rate="120" data-name="Fachada / Pintura">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>Fachada / Pintura</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Area Slider -->
+              <div class="sim-group">
+                <div class="sim-range-header">
+                  <label class="sim-label">2. Metragem Estimada (m²):</label>
+                  <span class="blue-val-pill" id="area-val-display">100 m²</span>
+                </div>
+                <input type="range" id="sim-area-range" min="20" max="1000" step="10" value="100" class="sim-slider" aria-label="Metragem Estimada em metros quadrados">
+                <div class="sim-slider-marks">
+                  <span>20m²</span>
+                  <span>250m²</span>
+                  <span>500m²</span>
+                  <span>1000m²+</span>
+                </div>
+              </div>
+
+              <!-- Extras Checkboxes -->
+              <div class="sim-group">
+                <label class="sim-label">3. Serviços Adicionais de Gestão:</label>
+                <div class="sim-checkboxes">
+                  <label class="sim-check-card">
+                    <input type="checkbox" id="check-gestao" checked data-add="15">
+                    <span class="check-box-custom blue-check"></span>
+                    <span class="check-info">
+                      <strong>Gestão 100% In-Loco & Acompanhamento Executivo</strong>
+                      <small>Supervisão direta das nossas equipes nos serviços</small>
+                    </span>
+                  </label>
+
+                  <label class="sim-check-card">
+                    <input type="checkbox" id="check-laudo" data-add="10">
+                    <span class="check-box-custom blue-check"></span>
+                    <span class="check-info">
+                      <strong>Relatório de Progresso & Suporte Técnico</strong>
+                      <small>Acompanhamento detalhado com a equipe</small>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Output Result Box -->
+            <div class="simulator-result-box">
+              <div class="result-header">
+                <span class="result-badge">ESTIMATIVA DE INVESTIMENTO</span>
+                <p>Valor projetado com base nas opções selecionadas:</p>
+              </div>
+
+              <div class="result-main-value">
+                <span class="blue-currency">R$</span>
+                <span class="calc-price" id="calc-price-display">20.700</span>
+                <span class="blue-currency">*</span>
+              </div>
+
+              <div class="result-summary-list">
+                <div class="summary-item">
+                  <span>Tipo de Serviço:</span>
+                  <strong id="sum-service-name">Construção / Reforma de Casa</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Área Estimada:</span>
+                  <strong id="sum-area-val">100 m²</strong>
+                </div>
+                <div class="summary-item">
+                  <span>Previsão de Execução:</span>
+                  <strong id="sum-days-val">12 a 18 dias úteis</strong>
+                </div>
+              </div>
+
+              <div class="result-actions">
+                <button type="button" class="btn btn-blue-primary btn-full" id="btn-send-sim-whatsapp">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                  <span>Enviar Simulação no WhatsApp</span>
+                </button>
+                <small class="disclaimer-note">*Projeção preliminar. O orçamento definitivo é formalizado após vistoria técnica no local.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO COM IMAGENS REAIS (DISTINCT ROOF IMAGE IN ITEM 4) -->
+    <section id="portfolio" class="section-padding bg-white">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="blue-tag">PORTFÓLIO DE PROJETOS</span>
+          <h2>Projetos & Obras Realizadas</h2>
+          <p>Veja exemplos reais de transformações gerenciadas pelas nossas equipes.</p>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="portfolio-filter-tabs">
+            <button type="button" class="filter-btn active" data-filter="all">Todos os Projetos</button>
+            <button type="button" class="filter-btn" data-filter="casas">Casas & Residencial</button>
+            <button type="button" class="filter-btn" data-filter="barracao">Barracões & Galpões</button>
+            <button type="button" class="filter-btn" data-filter="telhados">Telhados & Coberturas</button>
+          </div>
+        </div>
+
+        <div class="portfolio-cards-grid" id="portfolio-grid">
+          <!-- Item 1 -->
+          <div class="portfolio-card reveal delay-1" data-category="casas">
+            <div class="portfolio-img-container">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Construção de Casa Moderna">
+              <div class="portfolio-overlay">
+                <span class="blue-text">Residencial de Luxo</span>
+                <h4>Construção & Reforma de Casa Contemporânea</h4>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <h3>Casas & Residencial</h3>
+              <p>Reforma completa de residencia com estrutura em concreto, acabamento em gesso, porcelanato e iluminação técnica.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="portfolio-card reveal delay-2" data-category="barracao">
+            <div class="portfolio-img-container">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop" alt="Galpão Industrial">
+              <div class="portfolio-overlay">
+                <span class="blue-text">Galpões Industriais</span>
+                <h4>Readequação de Barracão Logístico</h4>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <h3>Barracões & Galpões</h3>
+              <p>Ampliação e execução de piso industrial polido para tráfego de cargas pesadas com estrutura metálica.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="portfolio-card reveal delay-3" data-category="casas">
+            <div class="portfolio-img-container">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop" alt="Interiores Nobres">
+              <div class="portfolio-overlay">
+                <span class="blue-text">Interiores Nobres</span>
+                <h4>Modernização de Imóvel Comercial</h4>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <h3>Interiores & Reformas</h3>
+              <p>Reformas corporativas e residenciais com foco em aproveitamento de espaço e estética refinada.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 (NEW DISTINCT HIGH-RES ROOF IMAGE) -->
+          <div class="portfolio-card reveal delay-1" data-category="telhados">
+            <div class="portfolio-img-container">
+              <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?q=80&w=1200&auto=format&fit=crop" alt="Estrutura de Telhado e Cobertura">
+              <div class="portfolio-overlay">
+                <span class="blue-text">Coberturas Térmicas</span>
+                <h4>Revisão de Cobertura Comercial</h4>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <h3>Telhados & Coberturas</h3>
+              <p>Substituição de telhas danificadas, instalação de mantas aluminizadas e troca de calhas de alta vazão.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER DE CONFIANÇA -->
+    <section class="trust-banner-blue">
+      <div class="container reveal">
+        <div class="trust-content-box text-center">
+          <h2>Compromisso Fiel com o Seu Projeto</h2>
+          <p>Supervisão direta das nossas equipes, transparência comercial e execução rigorosa dentro do prazo contratado.</p>
+          
+          <div class="trust-features-grid">
+            <div class="t-feature">
+              <div class="blue-t-icon">✓</div>
+              <span>Atendimento com a Gestão</span>
+            </div>
+            <div class="t-feature">
+              <div class="blue-t-icon">✓</div>
+              <span>100% Prazos Cumpridos</span>
+            </div>
+            <div class="t-feature">
+              <div class="blue-t-icon">✓</div>
+              <span>Zero Custos Ocultos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section class="section-padding bg-sky">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="blue-tag">PERGUNTAS FREQUENTES</span>
+          <h2>Esclarecimentos Técnicos</h2>
+          <p>Tire suas dúvidas sobre como gerenciamos os seus projetos com transparência.</p>
+        </div>
+
+        <div class="faq-accordion-wrapper reveal">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Como funciona a avaliação prévia e o orçamento?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Após seu contato, agendamos uma avaliação presencial ou reuniões técnicas para entender suas necessidades de obra. Em seguida, entregamos um orçamento completo com cronograma pré-definido.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Por que contratar a Serra Gerenciadora em vez de pedreiros avulsos?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Nós assumimos toda a responsabilidade da obra. Você não precisa se preocupar com falta de equipe, materiais incorretos ou surpresas no orçamento.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Como as equipes acompanham os projetos de obras?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Nossas equipes realizam fiscalização constante in-loco nos canteiros de obras, garantindo conformidade aos projetos, segurança e relatórios frequentes ao cliente.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Qual a região de atendimento?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Atendemos obras em Curitiba e toda a Região Metropolitana (São José dos Pinhais, Pinhais, Araucária, Campo Largo, Colombo, etc.).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <section id="contato" class="section-padding bg-white">
+      <div class="container">
+        <div class="contact-card-wrapper reveal">
+          <div class="contact-info-panel">
+            <h3>Atendimento & Equipes</h3>
+            <p>Fale diretamente com quem gerencia o seu projeto. Atendimento rápido e direto.</p>
+
+            <div class="c-method-list">
+              <div class="c-method-item">
+                <div class="c-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <strong>WhatsApp Direto</strong>
+                  <span>(41) 9 9630-6393</span>
+                </div>
+              </div>
+
+              <div class="c-method-item">
+                <div class="c-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div>
+                  <strong>Equipes Especializadas</strong>
+                  <span>Obras & Projetos Corporativos</span>
+                </div>
+              </div>
+
+              <div class="c-method-item">
+                <div class="c-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <strong>Região Atendida</strong>
+                  <span>Curitiba e Região Metropolitana</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <h3>Solicite seu Orçamento</h3>
+            <form id="contactForm" class="contact-form-styled">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Seu Nome / Empresa *</label>
+                  <input type="text" id="name" required placeholder="Ex: Rodrigo Silva">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Telefone / WhatsApp *</label>
+                  <input type="tel" id="phone" required placeholder="(41) 99999-9999">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Tipo de Obra / Serviço *</label>
+                <select id="service" required>
+                  <option value="" disabled selected>Selecione a opção...</option>
+                  <option value="casa">Construção ou Reforma de Casa</option>
+                  <option value="barracao">Barracões e Galpões Industriais</option>
+                  <option value="telhados">Telhados e Coberturas Térmicas</option>
+                  <option value="fachadas">Fachadas, Pinturas e Alvenaria</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Detalhes do Serviço *</label>
+                <textarea id="message" rows="4" required placeholder="Descreva o que você precisa no seu imóvel..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-blue-primary btn-full">
+                <span>Enviar Solicitação no WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ COM LOGO -->
+  <footer class="light-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <img src="logo.png" alt="Serra Reforma & Soluções" class="footer-logo">
+          <p>Gerenciadora e construtora de obras. Soluções completas para casas, galpões, telhados e reformas com rigor e transparência.</p>
+        </div>
+
+        <div class="footer-col links-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#empresa">A Serra</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#simulador">Simulador</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4>Atendimento Direto</h4>
+          <p><strong>WhatsApp:</strong> (41) 9 9630-6393</p>
+          <p><strong>Equipes:</strong> Obras & Reformas</p>
+          <p><strong>Região:</strong> Curitiba e RMC</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p>&copy; 2026 Serra Reforma & Soluções. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CLEAN FLOATING WHATSAPP BUTTON -->
+  <div class="whatsapp-widget-container">
+    <a href="https://wa.me/5541996306393?text=Ol%C3%A1!%20Estou%20no%20site%20da%20Serra%20Reforma%20%26%20Solu%C3%A7%C3%B5es%20e%20gostaria%20de%20falar%20com%20a%20equipe." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-float-btn" 
+       id="wa-float-btn" 
+       aria-label="Falar no WhatsApp com a Serra Reforma & Soluções">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
